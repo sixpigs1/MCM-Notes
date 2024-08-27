@@ -16,5 +16,5 @@ This repository will contain some methods and codes may be used in MCM.
 
 3. 熵权法
 
-- [ ] MATLAB
+- [x] MATLAB
 - [ ] Python
