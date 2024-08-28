@@ -49,3 +49,8 @@ This repository will contain some methods and codes may be used in MCM.
 
 - [ ] MATLAB
 - [x] Python, 从txt读取的功能稍有问题，但是可以直接输入数据
+
+3. 层次聚类法 Hierarchical Clustering (HC) (AGNES Algorithm)
+
+- [x] MATLAB, 建议使用MATLAB程序, 从data.txt读取数据
+- [x] Python
