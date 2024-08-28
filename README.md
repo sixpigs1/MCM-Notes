@@ -4,7 +4,7 @@ This repository will contain some methods and codes may be used in MCM.
 
 ## Evaluation Algorithms 评价算法
 
-1. 层次分析法 Analytic Hierarchy Process (AHP);
+1. 层次分析法 Analytic Hierarchy Process (AHP)
 
 - [x] MATLAB
 - [ ] Python
@@ -22,4 +22,9 @@ This repository will contain some methods and codes may be used in MCM.
 4. 模糊综合评价法 Fuzzy Aggregation Method
 
 - [x] MATLAB, 仅给出了一级的样例
+- [ ] Python
+
+5. 秩和比评价法 Rank Sum Ratio (RSR)
+
+- [x] MATLAB
 - [ ] Python
