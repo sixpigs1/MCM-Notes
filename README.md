@@ -45,12 +45,19 @@ This repository will contain some methods and codes may be used in MCM.
 - [ ] MATLAB
 - [x] Python
 
-2. 具有噪声的基于密度的聚类方法 Density-Based Spatial Clustering of Applications with Noise (DBSCAN algorithm)
+2. 密度聚类法 具有噪声的基于密度的聚类方法 Density-Based Spatial Clustering of Applications with Noise (DBSCAN algorithm)
 
 - [ ] MATLAB
-- [x] Python, 从txt读取的功能稍有问题，但是可以直接输入数据
+- [x] Python
 
-3. 层次聚类法 Hierarchical Clustering (HC) (AGNES Algorithm)
+1. 层次聚类法 Hierarchical Clustering (HC) (AGNES Algorithm)
 
-- [x] MATLAB, 建议使用MATLAB程序, 从data.txt读取数据
+- [x] MATLAB, 建议使用MATLAB程序, 从data.txt读取数据, 并且绘图种类丰富
+- [x] Python
+
+## Classification Problem 分类问题
+
+1. K-邻近算法 K-Nearest Neighbors (KNN)
+
+- [ ] MATLAB
 - [x] Python

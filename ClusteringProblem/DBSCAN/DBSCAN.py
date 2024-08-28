@@ -6,11 +6,11 @@ from sklearn import metrics
 # 数据存储的列表
 data = []
 # 数据文件的名称
-file_name = 'DBSCAN.py\data.txt'
+file_name = 'data.txt'
 # 数据分隔符
 split_char = ','
 
-'''
+
 # 读取文件内容，将每一行的数据转换为浮点数数组并添加到data列表中
 with open(file_name) as f:
     for line in f.readlines():
@@ -23,6 +23,7 @@ with open(file_name) as f:
 
 # 将数据列表转换为NumPy数组，以便进行进一步的处理
 data = np.array(data)
+
 '''
 
 data = np.array([
@@ -36,6 +37,7 @@ data = np.array([
     [10.0, 2.0],
     [9.0, 3.0],
 ])
+'''
 
 
 def create_data_set(*cores):
