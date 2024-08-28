@@ -28,3 +28,12 @@ This repository will contain some methods and codes may be used in MCM.
 
 - [x] MATLAB
 - [ ] Python
+
+## Time Series Processing 时间序列处理
+
+1. 灰色关联度分析 Grey Relation Analysis (GRA)
+
+用于分析序列（通常是时间序列）中各个子序列与母序列之间的相关性。
+
+- [x] MATLAB
+- [ ] Python
