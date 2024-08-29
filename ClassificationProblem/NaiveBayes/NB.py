@@ -4,25 +4,43 @@ from sklearn.datasets import make_circles
 from sklearn.ensemble import RandomTreesEmbedding
 from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.decomposition import TruncatedSVD
-from sklearn.naive_bayes import BernoulliNB
+from sklearn.naive_bayes import BernoulliNB, GaussianNB, MultinomialNB
 
 # 生成一个合成数据集，数据点呈圆形分布
 X, y = make_circles(factor=0.5, random_state=0, noise=0.05)
 
+# 选择分类方法
+print("Select a classification method: 1:BernoulliNB, 2:GaussianNB, or 3:MultinomialNB")
+method = input()
+
 # 使用随机树嵌入将数据转换为稀疏矩阵
-# 该转换用于后续的SVD降维
 hasher = RandomTreesEmbedding(n_estimators=10, random_state=0, max_depth=3)
 X_transformed = hasher.fit_transform(X)
 
 # 使用TruncatedSVD对稀疏矩阵进行降维，减少到2维
-# TruncatedSVD在处理稀疏矩阵时比普通SVD效果更好
 svd = TruncatedSVD(n_components=2)
 X_reduced = svd.fit_transform(X_transformed)
 
-# 训练一个朴素贝叶斯分类器，基于转换后的数据
-# 也可以尝试GaussianNB和MultinomialNB作为替代方案
-nb = BernoulliNB(alpha=0.5, binarize=False, fit_prior=True, class_prior=None)
-nb.fit(X_transformed, y)
+# 选择一个朴素贝叶斯分类器
+# 你可以分别尝试BernoulliNB, GaussianNB, MultinomialNB
+
+# BernoulliNB:
+if (method == "1"):
+    nb = BernoulliNB(alpha=0.5, binarize=False,
+                     fit_prior=True, class_prior=None)
+    nb.fit(X_transformed, y)
+# GaussianNB:
+# 注意：GaussianNB不支持稀疏矩阵，需要转换为密集矩阵
+elif (method == "2"):
+    nb = GaussianNB()
+    nb.fit(X_transformed.toarray(), y)
+# MultinomialNB:
+elif (method == "3"):
+    nb = MultinomialNB(alpha=0.5)
+    nb.fit(X_transformed, y)
+else:
+    print("Invalid input")
+    exit()
 
 # 训练一个ExtraTrees分类器作为对比
 trees = ExtraTreesClassifier(max_depth=3, n_estimators=10)
@@ -53,7 +71,10 @@ xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
 
 # 使用训练好的朴素贝叶斯分类器对网格进行预测
 transformed_grid = hasher.transform(np.c_[xx.ravel(), yy.ravel()])
-y_grid_pred = nb.predict_proba(transformed_grid)[:, 1]
+if (method == "2"):
+    y_grid_pred = nb.predict_proba(transformed_grid.toarray())[:, 1]
+else:
+    y_grid_pred = nb.predict_proba(transformed_grid)[:, 1]
 
 # 朴素贝叶斯分类器在转换后的数据上的预测结果可视化
 ax = plt.subplot(223)
