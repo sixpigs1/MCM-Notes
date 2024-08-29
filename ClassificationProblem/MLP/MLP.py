@@ -20,19 +20,25 @@ X_train, X_test, y_train, y_test = train_test_split(
 X_train = torch.tensor(X_train, dtype=torch.float32)
 y_train = torch.tensor(y_train, dtype=torch.float32).unsqueeze(1)
 
-# 定义模型
+# 定义更深的多层感知机模型
 
 
-class MLP(nn.Module):
+class DeepMLP(nn.Module):
     def __init__(self):
-        super(MLP, self).__init__()
-        self.hidden = nn.Linear(2, 3)
-        self.relu = nn.ReLU()
-        self.output = nn.Linear(3, 1)
-        self.sigmoid = nn.Sigmoid()
+        super(DeepMLP, self).__init__()
+        self.layer1 = nn.Linear(2, 5)  # 第1隐藏层：输入2个特征，输出5个神经元
+        self.layer2 = nn.Linear(5, 5)  # 第2隐藏层：输入5个神经元，输出5个神经元
+        self.layer3 = nn.Linear(5, 5)  # 第3隐藏层：输入5个神经元，输出5个神经元
+        self.output = nn.Linear(5, 1)  # 输出层：输入5个神经元，输出1个神经元
+        self.relu = nn.ReLU()          # ReLU激活函数
+        self.sigmoid = nn.Sigmoid()    # Sigmoid激活函数，用于输出层
 
     def forward(self, x):
-        x = self.hidden(x)
+        x = self.layer1(x)
+        x = self.relu(x)
+        x = self.layer2(x)
+        x = self.relu(x)
+        x = self.layer3(x)
         x = self.relu(x)
         x = self.output(x)
         x = self.sigmoid(x)
@@ -40,7 +46,7 @@ class MLP(nn.Module):
 
 
 # 创建模型实例
-model = MLP()
+model = DeepMLP()
 
 # 定义损失函数和优化器
 criterion = nn.BCELoss()
@@ -66,8 +72,10 @@ sample_output = model(sample_input)
 print("样例输入:", sample_input)
 print("样例输出:", sample_output)
 
+'''
 # 输出部分数据以供查看
 print("Sample data points:")
 print(X[:10])  # 输出前10个数据点
 print("Sample labels:")
 print(y[:10])  # 输出前10个标签
+'''
