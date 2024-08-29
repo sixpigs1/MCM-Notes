@@ -86,3 +86,10 @@ This repository will contain some methods and codes may be used in MCM.
 
 - [ ] MATLAB
 - [x] Python
+
+## 数据降维 Data Reduction
+
+### 1. 主成分分析 Principal Component Analysis (PCA)
+
+- [x] MATLAB
+- [x] Python
