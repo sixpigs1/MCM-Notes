@@ -75,4 +75,9 @@ This repository will contain some methods and codes may be used in MCM.
 ### 4. 朴素贝叶斯算法 Naive Bayes (NB)
 
 - [x] MATLAB, Fisheriris
-- [x] Python, Recommended, 给出了三种实现方法
+- [x] Python, Recommended, 给出了三种实现方法 (BernoulliNB, GaussianNB, MultinomialNB)
+
+### 5. 多层感知机 Multi-Layer Perceptron (MLP)
+
+- [ ] MATLAB
+- [x] Python
