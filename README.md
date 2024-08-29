@@ -66,3 +66,8 @@ This repository will contain some methods and codes may be used in MCM.
 
 - [x] MATLAB, CART
 - [x] Python, ID3, C4.5
+
+### 3. 支持向量机 Support Vector Machine (SVM)
+
+- [x] MATLAB
+- [x] Python
