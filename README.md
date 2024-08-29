@@ -81,3 +81,8 @@ This repository will contain some methods and codes may be used in MCM.
 
 - [ ] MATLAB
 - [x] Python
+
+### 6. BP神经网络 Back-Propagation Neural Network (BPNN)
+
+- [ ] MATLAB
+- [x] Python
