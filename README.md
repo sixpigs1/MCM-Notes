@@ -71,3 +71,8 @@ This repository will contain some methods and codes may be used in MCM.
 
 - [x] MATLAB
 - [x] Python
+
+### 4. 朴素贝叶斯算法 Naive Bayes (NB)
+
+- [x] MATLAB, Fisheriris
+- [x] Python, Recommended
