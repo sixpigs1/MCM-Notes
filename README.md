@@ -87,10 +87,14 @@ This repository will contain some methods and codes may be used in MCM.
 - [ ] MATLAB
 - [x] Python
 
-### 7. 随机森林 Random Forest (RF)
+## 集成学习 Ensemble Learning
+
+### 1. 随机森林 Random Forest (RF)
 
 - [ ] MATLAB
 - [x] Python
+
+### 2. Boosting方法 Boosting (AdaBoost, GBDT)
 
 ## 数据降维 Data Reduction
 
