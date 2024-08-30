@@ -99,6 +99,11 @@ This repository will contain some methods and codes may be used in MCM.
 - [ ] MATLAB
 - [x] Python, AdaBoost, Gradient Boosting
 
+### 3. Stacking方法 Stacking (Stacked Generalization)
+
+- [ ] MATLAB
+- [x] Python
+
 ## 数据降维 Data Reduction
 
 ### 1. 主成分分析 Principal Component Analysis (PCA)
