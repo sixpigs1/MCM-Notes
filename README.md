@@ -87,6 +87,11 @@ This repository will contain some methods and codes may be used in MCM.
 - [ ] MATLAB
 - [x] Python
 
+### 7. 随机森林 Random Forest (RF)
+
+- [ ] MATLAB
+- [x] Python
+
 ## 数据降维 Data Reduction
 
 ### 1. 主成分分析 Principal Component Analysis (PCA)
