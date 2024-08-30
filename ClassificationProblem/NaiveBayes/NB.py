@@ -107,3 +107,9 @@ print("Sample data points:")
 print(X[:10])  # 输出前10个数据点
 print("Sample labels:")
 print(y[:10])  # 输出前10个标签
+
+# 输出部分数据以供查看
+print("Sample data points:")
+print(X[:10])  # 输出前10个数据点
+print("Sample labels:")
+print(y[:10])  # 输出前10个标签
