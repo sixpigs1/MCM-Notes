@@ -122,3 +122,5 @@ This repository will contain some methods and codes may be used in MCM.
 
 - [x] MATLAB, 有bug, py可以懒得de了
 - [x] Python
+
+各种不同的回归模型很多，暂时先写这两个，到时候用到了再看。
