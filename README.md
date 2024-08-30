@@ -117,3 +117,8 @@ This repository will contain some methods and codes may be used in MCM.
 
 - [x] MATLAB
 - [ ] Python
+
+### 2. 岭回归 Ridge Regression (RR)
+
+- [x] MATLAB, 有bug, py可以懒得de了
+- [x] Python
