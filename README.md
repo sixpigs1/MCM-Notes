@@ -124,3 +124,10 @@ This repository will contain some methods and codes may be used in MCM.
 - [x] Python
 
 各种不同的回归模型很多，暂时先写这两个，到时候用到了再看。
+
+## 关于数据读写
+
+从excel读写数据
+
+- [x] MATLAB, 读取
+- [x] Python

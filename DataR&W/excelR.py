@@ -52,3 +52,17 @@ print("Sample data points:")
 print(X[:10])  # 输出前10个数据点
 print("Sample labels:")
 print(y[:10])  # 输出前10个标签
+
+# 创建一个新的工作簿和工作表
+wb = openpyxl.Workbook()
+ws = wb.active
+ws.title = "Sheet1"
+
+# 将二维数组中的数据写入到Excel表格中
+for row in X:
+    ws.append(row)
+
+# 保存工作簿到文件
+wb.save("output.xlsx")
+
+print("数据已成功保存到output.xlsx")
