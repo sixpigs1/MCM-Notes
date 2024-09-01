@@ -38,6 +38,16 @@ This repository will contain some methods and codes may be used in MCM.
 - [x] MATLAB
 - [ ] Python
 
+### 2. ARIMA模型 ARIMA Model
+
+- [ ] MATLAB
+- [x] Python
+
+### 3. LSTM长短期记忆网络 Long Short-Term Memory (LSTM)
+
+- [ ] MATLAB
+- [x] Python
+
 ## Clustering Problem 聚类问题
 
 ### 1. K-means 算法 K-means algorithm
